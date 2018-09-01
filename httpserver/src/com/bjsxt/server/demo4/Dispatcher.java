@@ -1,4 +1,4 @@
-package com.bjsxt.server.demo2;
+package com.bjsxt.server.demo4;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -44,11 +44,13 @@ public class Dispatcher implements Runnable {
 			e.printStackTrace();
 			this.code=500;
 		}
+		
 		try {
 			rep.pushToClient(code);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		CloseUtil.closeAll(client);
 	}
 

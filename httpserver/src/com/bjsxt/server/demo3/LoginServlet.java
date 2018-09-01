@@ -1,4 +1,4 @@
-package com.bjsxt.server.demo2;
+package com.bjsxt.server.demo3;
 
 public class LoginServlet extends Servlet {
 
